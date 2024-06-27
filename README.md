@@ -20,16 +20,17 @@ Este projeto implementa um simples carrossel de imagens em JavaScript. O carross
 
 Esta função é responsável por avançar para a próxima imagem no carrossel. Funciona da seguinte maneira:
 
-1. Seleciona a Próxima Imagem: A imagem apontada por nextImage é armazenada na variável image.
+1. **Seleciona a Próxima Imagem**: A imagem apontada por nextImage é armazenada na variável image.
 
-2. Atualiza o z-index: O z-index da imagem é aumentado e atribuído a ela para garantir que ela apareça no topo.
-3. Reseta a Margem: A margem esquerda da imagem é redefinida para 0%, o que faz com que a imagem entre na tela a partir da direita.
+2. **Atualiza o z-index**: O z-index da imagem é aumentado e atribuído a ela para garantir que ela apareça no topo.
 
-4. Atualiza o Índice: O índice nextImage é incrementado para apontar para a próxima imagem.
+3. **Reseta a Margem**: A margem esquerda da imagem é redefinida para 0%, o que faz com que a imagem entre na tela a partir da direita.
 
-5. Resetar o Índice (se necessário): Se nextImage alcança o fim da coleção de imagens, ele é resetado para 0.
+4. **Atualiza o Índice**: O índice nextImage é incrementado para apontar para a próxima imagem.
 
-6. Chama resetImages(): Após 500 milissegundos, a função resetImages() é chamada para mover as imagens que já passaram para fora da área visível.
+5. **Resetar o Índice (se necessário)**: Se nextImage alcança o fim da coleção de imagens, ele é resetado para 0.
+
+6. **Chama resetImages()**: Após 500 milissegundos, a função resetImages() é chamada para mover as imagens que já passaram para fora da área visível.
 
 **`resetImages()`**
 
