@@ -1,3 +1,30 @@
+/* Centralize o conteúdo da página */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Contêiner para centralizar */
+.centralize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ajuste conforme necessário */
+    height: 100%; /* Ajuste conforme necessário */
+}
+
+/* Estilo do contêiner de imagens */
+#container {
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 500px;
+}
+
+/* Estilo das imagens */
 img {
     position: absolute;
     width: 100%;
@@ -10,13 +37,7 @@ img {
     transition: margin-left 500ms ease-in;
 }
 
-div {
-    overflow: hidden;
-    position: relative;
-    width: 300px;
-    height: 500px;
-}
-
+/* Classe da imagem ativa */
 .ativa {
-    margin-left:0%;
+    margin-left: 0%;
 }
